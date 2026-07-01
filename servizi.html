@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://cantieregaravaglia.it/servizi.html">
+  <title>Servizi | Cantiere Nautico Garavaglia - Manutenzione, Rimessaggio, Assistenza</title>
+  <meta name="description" content="Servizi completi per la tua imbarcazione: assistenza meccanica, manutenzione carena, rimessaggio, collaudi, equipaggiamento e consulenza acquisto/vendita.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .service-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .service-detail:last-child { border-bottom: none; }
+    .service-detail:nth-child(even) { direction: rtl; }
+    .service-detail:nth-child(even) > * { direction: ltr; }
+    .service-detail-img { aspect-ratio: 4/3; background: linear-gradient(135deg, var(--navy-light), var(--sea-blue)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); font-size: 4rem; }
+    .service-detail-content .section-label { margin-bottom: 8px; }
+    .service-detail-content h3 { font-size: 1.8rem; margin-bottom: 16px; color: var(--navy); }
+    .service-detail-content p { color: var(--text-light); font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .service-features { margin-top: 24px; }
+    .service-features li { padding: 8px 0; padding-left: 28px; position: relative; color: var(--text-light); font-size: 0.95rem; }
+    .service-features li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+
+    .flexicovers-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .flexicovers-content h3 { font-size: 1.8rem; color: var(--white); margin-bottom: 16px; }
+    .flexicovers-content p { color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 12px; }
+    .flexicovers-img { aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(46,134,171,0.2)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.2); font-size: 4rem; border: 1px solid rgba(255,255,255,0.08); }
+
+    @media (max-width: 768px) {
+      .service-detail, .service-detail:nth-child(even) { grid-template-columns: 1fr; gap: 30px; direction: ltr; }
+      .flexicovers-section { grid-template-columns: 1fr; gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="azienda.html">Chi Siamo</a>
+        <a href="servizi.html" class="active">Servizi</a>
+        <a href="vetrina.html">Vetrina</a>
+        <a href="contatti.html" class="nav-cta">Contattaci</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-label">I Nostri Servizi</span>
+      <h1>Un servizio completo per la tua barca</h1>
+      <p>Dalla manutenzione ordinaria agli interventi specializzati: tutto ci&ograve; di cui hai bisogno, in un unico cantiere.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES DETAIL -->
+  <section class="section">
+    <div class="container">
+
+      <div class="service-detail" id="meccanica">
+        <div class="service-detail-img">&#9881;</div>
+        <div class="service-detail-content">
+          <span class="section-label">01</span>
+          <h3>Assistenza Meccanica Specializzata</h3>
+          <p>Interventi meccanici di qualsiasi genere su motori marini entrobordo e fuoribordo. Il nostro team ha maturato una competenza specifica sui propulsori delle imbarcazioni pi&ugrave; prestigiose.</p>
+          <ul class="service-features">
+            <li>Diagnosi elettronica avanzata</li>
+            <li>Revisione e riparazione motori marini</li>
+            <li>Manutenzione ordinaria e straordinaria</li>
+            <li>Ricambi originali Volvo Penta, MAN, Cummins</li>
+            <li>Assistenza su motori diesel e benzina</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail" id="equipaggiamento">
+        <div class="service-detail-img">&#9875;</div>
+        <div class="service-detail-content">
+          <span class="section-label">02</span>
+          <h3>Equipaggiamento Nautico</h3>
+          <p>Fornitura e installazione di dotazioni, attrezzature e accessori per la tua imbarcazione. Dalla strumentazione elettronica ai sistemi di sicurezza, tutto per navigare al meglio.</p>
+          <ul class="service-features">
+            <li>Strumentazione elettronica di bordo</li>
+            <li>GPS, pilota automatico, ecoscandaglio</li>
+            <li>Impianti elettrici e illuminazione LED</li>
+            <li>Dotazioni di sicurezza a norma</li>
+            <li>Accessori e personalizzazioni</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail" id="carena">
+        <div class="service-detail-img">&#9730;</div>
+        <div class="service-detail-content">
+          <span class="section-label">03</span>
+          <h3>Manutenzione Carena</h3>
+          <p>Trattamenti completi per lo scafo: dalla pulizia alla verniciatura, dall'antivegetativa al trattamento anti-osmosi. La tua carena sempre in condizioni perfette.</p>
+          <ul class="service-features">
+            <li>Trattamento antivegetativo professionale</li>
+            <li>Lucidatura e vetroresina</li>
+            <li>Prevenzione e trattamento osmosi</li>
+            <li>Verniciatura e ritocchi estetici</li>
+            <li>Pulizia professionale interni ed esterni</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail" id="collaudi">
+        <div class="service-detail-img">&#10003;</div>
+        <div class="service-detail-content">
+          <span class="section-label">04</span>
+          <h3>Collaudi e Assistenza</h3>
+          <p>Verifiche funzionali complete e prove in mare per garantire che ogni sistema della tua imbarcazione sia perfettamente operativo prima di prendere il largo.</p>
+          <ul class="service-features">
+            <li>Prove motore a banco e in navigazione</li>
+            <li>Verifica impianti elettrici e idraulici</li>
+            <li>Controllo sistemi di sicurezza</li>
+            <li>Assistenza tecnica dedicata</li>
+            <li>Report dettagliato post-intervento</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail" id="rimessaggio">
+        <div class="service-detail-img">&#8962;</div>
+        <div class="service-detail-content">
+          <span class="section-label">05</span>
+          <h3>Rimessaggio</h3>
+          <p>Custodia sicura della tua imbarcazione durante la stagione invernale o per periodi di inattivit&agrave;. Capannone coperto e piazzale esterno con sorveglianza.</p>
+          <ul class="service-features">
+            <li>Rimessaggio in capannone coperto</li>
+            <li>Rimessaggio su piazzale esterno</li>
+            <li>Servizio di alaggio e varo</li>
+            <li>Movimentazione con attrezzature professionali</li>
+            <li>Preparazione invernale completa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail" id="consulenza">
+        <div class="service-detail-img">&#9733;</div>
+        <div class="service-detail-content">
+          <span class="section-label">06</span>
+          <h3>Consulenza Acquisto &amp; Vendita</h3>
+          <p>Il nostro supporto esperto per chi vuole acquistare o vendere un'imbarcazione. Valutazioni oggettive, perizie tecniche e consulenza personalizzata per fare la scelta giusta.</p>
+          <ul class="service-features">
+            <li>Valutazione tecnica dell'imbarcazione</li>
+            <li>Perizie pre-acquisto dettagliate</li>
+            <li>Supporto nella trattativa</li>
+            <li>Pubblicazione annunci nella nostra vetrina</li>
+            <li>Segnalazioni completamente gratuite</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLEXICOVERS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="flexicovers-section">
+        <div class="flexicovers-content">
+          <span class="section-label">Partner Autorizzato</span>
+          <h3>Rivenditore Autorizzato Flexicovers</h3>
+          <p>Siamo rivenditori autorizzati <strong>FLEXICOVERS</strong>, leader nelle coperture protettive per imbarcazioni. Soluzioni su misura per proteggere la tua barca dagli agenti atmosferici, dai raggi UV e dall'usura del tempo.</p>
+          <p>Ogni copertura &egrave; realizzata con materiali di alta qualit&agrave;, resistenti e traspiranti, progettata per adattarsi perfettamente alla forma della tua imbarcazione.</p>
+          <a href="contatti.html" class="btn btn-primary" style="margin-top: 20px;">Richiedi un Preventivo &rarr;</a>
+        </div>
+        <div class="flexicovers-img">&#9973;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands-section">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:40px;">
+        <span class="section-label">I Marchi che Trattiamo</span>
+        <h2>Esperti sulle migliori imbarcazioni</h2>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-item">SUNSEEKER</div>
+        <div class="brand-item">FAIRLINE</div>
+        <div class="brand-item">ABBATE</div>
+        <div class="brand-item">PIRELLI</div>
+        <div class="brand-item">CRANCHI</div>
+        <div class="brand-item">VOLVO PENTA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Hai bisogno di assistenza per la tua barca?</h2>
+      <p>Contattaci per un preventivo gratuito e senza impegno.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="contatti.html" class="btn btn-primary">Richiedi Preventivo &rarr;</a>
+        <a href="https://wa.me/393355279538?text=Salve,%20vorrei%20un%20preventivo%20per..." class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a><p>Impegno e professionalit&agrave;, un servizio prima classe.</p></div>
+        <div><h4>Navigazione</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="azienda.html">Chi Siamo</a></li><li><a href="servizi.html">Servizi</a></li><li><a href="vetrina.html">Vetrina</a></li><li><a href="contatti.html">Contatti</a></li></ul></div>
+        <div><h4>Servizi</h4><ul class="footer-links"><li><a href="#meccanica">Assistenza Meccanica</a></li><li><a href="#carena">Manutenzione Carena</a></li><li><a href="#rimessaggio">Rimessaggio</a></li><li><a href="#collaudi">Collaudi</a></li><li><a href="#consulenza">Consulenza</a></li></ul></div>
+        <div><h4>Contatti</h4><div class="footer-contact-item"><span class="icon">&#9872;</span><div><strong>Cantiere:</strong><br>Via Divizia, 3 - 17051 Andora (SV)</div></div><div class="footer-contact-item"><span class="icon">&#9742;</span><div><a href="tel:+390182636506">0182 636506</a><br><a href="tel:+393355279538">335 527 9538</a></div></div><div class="footer-contact-item"><span class="icon">&#9993;</span><div><a href="mailto:info@cantieregaravaglia.it">info@cantieregaravaglia.it</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2025 Cantiere Nautico Alfonso Garavaglia - P.IVA 00370690091</span><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/393355279538?text=Salve,%20vorrei%20informazioni" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <button class="scroll-top" aria-label="Torna in cima">&#8593;</button>
+
+  <script src="js/config.js?v=2"></script>
+  <script src="js/site-data.js?v=2"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

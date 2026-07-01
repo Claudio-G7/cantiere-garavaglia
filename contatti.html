@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://cantieregaravaglia.it/contatti.html">
+  <title>Contatti | Cantiere Nautico Garavaglia - Andora (SV)</title>
+  <meta name="description" content="Contatta il Cantiere Nautico Garavaglia ad Andora (SV). Telefono, email, WhatsApp e modulo contatti. Via Divizia 3, Andora.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius);
+      font-size: 0.95rem; font-family: inherit; background: var(--white); color: var(--text-dark);
+      transition: var(--transition);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+    }
+    .form-group textarea { resize: vertical; min-height: 140px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-checkbox { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px; }
+    .form-checkbox input[type="checkbox"] { width: 18px; height: 18px; margin-top: 2px; flex-shrink: 0; accent-color: var(--gold); }
+    .form-checkbox label { font-size: 0.82rem; color: var(--text-light); font-weight: 400; }
+    .form-checkbox a { color: var(--gold); text-decoration: underline; }
+    .form-status { padding: 16px; border-radius: var(--radius); margin-top: 16px; display: none; font-size: 0.92rem; }
+    .form-status.success { display: block; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .form-status.error { display: block; background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+
+    .contact-info-card { background: var(--navy); color: var(--white); border-radius: var(--radius-lg); padding: 40px; height: fit-content; }
+    .contact-info-card h3 { font-family: -apple-system, sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 32px; color: var(--white); }
+    .contact-item { display: flex; gap: 16px; margin-bottom: 28px; align-items: flex-start; }
+    .contact-item-icon { width: 44px; height: 44px; background: rgba(201,168,76,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--gold); flex-shrink: 0; }
+    .contact-item-text { font-size: 0.92rem; }
+    .contact-item-text strong { display: block; margin-bottom: 4px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); }
+    .contact-item-text a { color: rgba(255,255,255,0.8); }
+    .contact-item-text a:hover { color: var(--gold); }
+    .contact-item-text p { color: rgba(255,255,255,0.7); line-height: 1.6; }
+
+    .wa-btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 14px; background: #25D366; color: var(--white); border-radius: var(--radius); font-weight: 600; font-size: 0.95rem; margin-top: 32px; transition: var(--transition); }
+    .wa-btn:hover { background: #1fb855; transform: translateY(-2px); }
+    .wa-btn svg { width: 22px; height: 22px; fill: white; }
+
+    .map-section { margin-top: 0; }
+    .map-section iframe { width: 100%; height: 400px; border: none; border-radius: 0; display: block; }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="azienda.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="vetrina.html">Vetrina</a>
+        <a href="contatti.html" class="nav-cta active">Contattaci</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-label">Contatti</span>
+      <h1>Parliamo della tua barca</h1>
+      <p>Siamo qui per rispondere a qualsiasi domanda. Compila il modulo o contattaci direttamente.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div>
+          <h2 style="font-size:1.6rem; margin-bottom:8px;">Inviaci un messaggio</h2>
+          <p style="color:var(--text-light); margin-bottom:32px; font-size:0.95rem;">Compila il modulo e ti risponderemo entro 24 ore.</p>
+
+          <form id="contact-form" action="https://formspree.io/f/YOURFORMID" method="POST">
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome e Cognome *</label>
+                <input type="text" id="name" name="name" required placeholder="Il tuo nome">
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" placeholder="+39 ...">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="la.tua@email.it">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Oggetto</label>
+              <select id="subject" name="subject">
+                <option value="">Seleziona un argomento...</option>
+                <option value="Assistenza Meccanica">Assistenza Meccanica</option>
+                <option value="Manutenzione Carena">Manutenzione Carena</option>
+                <option value="Rimessaggio">Rimessaggio</option>
+                <option value="Informazioni Barca">Informazioni su una barca in vetrina</option>
+                <option value="Vendita Barca">Voglio vendere la mia barca</option>
+                <option value="Preventivo">Richiesta preventivo</option>
+                <option value="Altro">Altro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Messaggio *</label>
+              <textarea id="message" name="message" required placeholder="Descrivi la tua richiesta..."></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>. Acconsento al trattamento dei miei dati personali. *</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Invia Messaggio &rarr;</button>
+
+            <div class="form-status success" id="form-success">Messaggio inviato con successo! Ti risponderemo al pi&ugrave; presto.</div>
+            <div class="form-status error" id="form-error">Si &egrave; verificato un errore. Riprova o contattaci telefonicamente.</div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info-card">
+          <h3>Informazioni di Contatto</h3>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9872;</div>
+            <div class="contact-item-text">
+              <strong>Cantiere</strong>
+              <p>Via Divizia, 3<br>17051 Andora (SV)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9872;</div>
+            <div class="contact-item-text">
+              <strong>Ufficio</strong>
+              <p>Via XXV Aprile, 6<br>Andora (SV)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9742;</div>
+            <div class="contact-item-text">
+              <strong>Telefono</strong>
+              <a href="tel:+390182636506">0182 636506</a><br>
+              <a href="tel:+393355279538">335 527 9538</a><br>
+              <a href="tel:+393356442666">335 644 2666</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9993;</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <a href="mailto:info@cantieregaravaglia.it">info@cantieregaravaglia.it</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9200;</div>
+            <div class="contact-item-text">
+              <strong>Orari</strong>
+              <p>Lun - Sab: 8:00 - 18:00<br>Domenica: Chiuso</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/393355279538?text=Salve,%20vorrei%20informazioni%20sui%20vostri%20servizi" class="wa-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chatta su WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.5!2d8.1386!3d43.9447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cda8e0f2b7b7b7%3A0x0!2sVia+Divizia%2C+3%2C+17051+Andora+SV!5e0!3m2!1sit!2sit!4v1"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Posizione Cantiere Nautico Garavaglia - Via Divizia 3, Andora (SV)">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a><p>Impegno e professionalit&agrave;, un servizio prima classe.</p></div>
+        <div><h4>Navigazione</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="azienda.html">Chi Siamo</a></li><li><a href="servizi.html">Servizi</a></li><li><a href="vetrina.html">Vetrina</a></li><li><a href="contatti.html">Contatti</a></li></ul></div>
+        <div><h4>Servizi</h4><ul class="footer-links"><li><a href="servizi.html#meccanica">Assistenza Meccanica</a></li><li><a href="servizi.html#carena">Manutenzione Carena</a></li><li><a href="servizi.html#rimessaggio">Rimessaggio</a></li><li><a href="servizi.html#collaudi">Collaudi</a></li><li><a href="servizi.html#consulenza">Consulenza</a></li></ul></div>
+        <div><h4>Contatti</h4><div class="footer-contact-item"><span class="icon">&#9872;</span><div><strong>Cantiere:</strong><br>Via Divizia, 3 - 17051 Andora (SV)</div></div><div class="footer-contact-item"><span class="icon">&#9742;</span><div><a href="tel:+390182636506">0182 636506</a><br><a href="tel:+393355279538">335 527 9538</a></div></div><div class="footer-contact-item"><span class="icon">&#9993;</span><div><a href="mailto:info@cantieregaravaglia.it">info@cantieregaravaglia.it</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2025 Cantiere Nautico Alfonso Garavaglia - P.IVA 00370690091</span><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/393355279538?text=Salve,%20vorrei%20informazioni" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <button class="scroll-top" aria-label="Torna in cima">&#8593;</button>
+
+  <!-- Form handling + URL params -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Pre-fill boat name from URL params
+      const params = new URLSearchParams(window.location.search);
+      const barca = params.get('barca');
+      if (barca) {
+        const subjectSelect = document.getElementById('subject');
+        const messageField = document.getElementById('message');
+        if (subjectSelect) subjectSelect.value = 'Informazioni Barca';
+        if (messageField) messageField.value = 'Salve, vorrei informazioni sulla barca: ' + barca + '\n\n';
+        messageField.focus();
+      }
+
+      // Form submission
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const btn = form.querySelector('button[type="submit"]');
+          const origText = btn.innerHTML;
+          btn.innerHTML = 'Invio in corso...';
+          btn.disabled = true;
+
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+              document.getElementById('form-success').style.display = 'block';
+              document.getElementById('form-error').style.display = 'none';
+              form.reset();
+            } else {
+              throw new Error('Errore invio');
+            }
+          } catch (err) {
+            document.getElementById('form-error').style.display = 'block';
+            document.getElementById('form-success').style.display = 'none';
+          }
+
+          btn.innerHTML = origText;
+          btn.disabled = false;
+        });
+      }
+    });
+  </script>
+  <script src="js/config.js?v=2"></script>
+  <script src="js/site-data.js?v=2"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

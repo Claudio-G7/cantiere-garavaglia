@@ -1,0 +1,22 @@
+# === Repo PUBBLICO per GitHub Pages: solo i file del sito ===
+
+# PocketBase (solo locale)
+pb/
+# Backup e archivi pesanti
+backup-vecchio-sito/
+*.zip
+
+# Documentazione interna e materiale con dati sensibili (NON pubblicare)
+*.md
+DOMINIO-EMAIL.md
+.claude/
+start-local.bat
+
+# Backend, strumenti e pannello admin (non servono al sito statico pubblico)
+backend/
+tools/
+admin/
+
+# Sistema
+.DS_Store
+Thumbs.db
