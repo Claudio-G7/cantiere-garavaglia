@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marine.bosmal-italia.it/sitemap.xml
+Sitemap: https://cantieregaravaglia.it/sitemap.xml
