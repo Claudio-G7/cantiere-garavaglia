@@ -5,7 +5,7 @@
   var isLocal = host === 'localhost' || host === '127.0.0.1' || host === '' || host === '::1';
   window.BOSMAL = {
     // Backend PocketBase
-    API_URL: isLocal ? 'http://127.0.0.1:8090' : 'https://api.marine.bosmal-italia.it',
+    API_URL: isLocal ? 'http://127.0.0.1:8090' : 'https://api.cantieregaravaglia.it',
     COLLECTION: 'barche',
     // Fallback statici usati se l'API non risponde (resilienza)
     FALLBACK_JSON: 'data/barche.json',
