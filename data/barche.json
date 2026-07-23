@@ -213,7 +213,18 @@
     "foto": [
       "images/boats/34sunseeker-portofino/34S.JPG",
       "images/boats/34sunseeker-portofino/341.jpg",
-      "images/boats/34sunseeker-portofino/34_2.jpg"
+      "images/boats/34sunseeker-portofino/20180808_175247p.jpg",
+      "images/boats/34sunseeker-portofino/20180808_175321p.jpg",
+      "images/boats/34sunseeker-portofino/34_2.jpg",
+      "images/boats/34sunseeker-portofino/20170801_113620.jpg",
+      "images/boats/34sunseeker-portofino/20170801_113942.jpg",
+      "images/boats/34sunseeker-portofino/20170801_113505.jpg",
+      "images/boats/34sunseeker-portofino/20170801_113412.jpg",
+      "images/boats/34sunseeker-portofino/20170801_113959.jpg",
+      "images/boats/34sunseeker-portofino/20170801_114032.jpg",
+      "images/boats/34sunseeker-portofino/20170801_114154.jpg",
+      "images/boats/34sunseeker-portofino/20170801_114257.jpg",
+      "images/boats/34sunseeker-portofino/34sunseeker-portofino-layout.jpg"
     ]
   },
   {
@@ -284,15 +295,20 @@
     "carburante": "Diesel",
     "categoria": "Natante",
     "extra": [],
-    "descrizione": "Linea sportiva e compatta. Categoria natante, doppia motorizzazione diesel Volvo Penta.",
-    "cover": "images/boats/29MohawkSunseeker/20231028_092720.jpg",
+    "descrizione": "Linea sportiva e compatta, categoria natante con doppia motorizzazione diesel Volvo Penta. Cabina con dinette trasformabile, locale toilette separato con lavello e pozzetto abitabile con punto snack attrezzato di frigo e lavello.",
+    "cover": "images/boats/29MohawkSunseeker/4.jpg",
     "foto": [
+      "images/boats/29MohawkSunseeker/4.jpg",
+      "images/boats/29MohawkSunseeker/20231028_092657.jpg",
       "images/boats/29MohawkSunseeker/20231028_092720.jpg",
-      "images/boats/29MohawkSunseeker/bagno.jpg",
-      "images/boats/29MohawkSunseeker/dinettefrigolavello.jpg",
+      "images/boats/29MohawkSunseeker/20231028_092735.jpg",
+      "images/boats/29MohawkSunseeker/20231028_092910.jpg",
       "images/boats/29MohawkSunseeker/pozzettoabitabile.jpg",
       "images/boats/29MohawkSunseeker/pozzettoabitaleparteguida.jpg",
-      "images/boats/29MohawkSunseeker/report.jpg"
+      "images/boats/29MohawkSunseeker/dinettefrigolavello.jpg",
+      "images/boats/29MohawkSunseeker/lettodinettestrasformabile.jpg",
+      "images/boats/29MohawkSunseeker/bagno.jpg",
+      "images/boats/29MohawkSunseeker/layout29.jpg"
     ]
   },
   {
@@ -340,15 +356,22 @@
     "larghezza": "2,67 m",
     "motori": "2x Volvo 220HP",
     "cabine": "",
-    "bagni": "",
-    "posti_letto": "",
+    "bagni": "1",
+    "posti_letto": "4",
     "carburante": "Benzina",
     "categoria": "Natante",
     "extra": [],
-    "descrizione": "Un classico italiano. Design Abbate inconfondibile, categoria natante, doppia motorizzazione benzina.",
+    "descrizione": "Un classico italiano firmato Bruno Abbate, categoria natante con doppia motorizzazione benzina Volvo Penta. Pozzetto esterno con divano e tavolo estraibile, dinette trasformabile in letto, cucina di bordo con 2 fuochi e frigo, 2 posti letto a prua e 2 in dinette, toilette separata con lavello. Verricello elettrico, GPS con ecoscandaglio a colori. Ottimo stato.",
     "cover": "images/boats/32primatist-abbate-bruno/foxAbbate.jpg",
     "foto": [
-      "images/boats/32primatist-abbate-bruno/foxAbbate.jpg"
+      "images/boats/32primatist-abbate-bruno/foxAbbate.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_103255.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_103330.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_103712.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_103837.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_103935.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_104021.jpg",
+      "images/boats/32primatist-abbate-bruno/20160514_104055.jpg"
     ]
   }
 ]
