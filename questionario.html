@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pagina riservata ai clienti (link inviato via email): fuori da menu, sitemap e Google -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Questionario clienti | Cantiere Nautico Garavaglia - Andora (SV)</title>
+  <meta name="description" content="Questionario riservato ai clienti del Cantiere Nautico Garavaglia: la Sua opinione sulla stagione e le esigenze per il rimessaggio invernale.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/questionario.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="azienda.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="vetrina.html">Vetrina</a>
+        <a href="contatti.html" class="nav-cta">Contattaci</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-label">Questionario clienti &middot; Stagione 2026</span>
+      <h1>La Sua opinione per noi conta</h1>
+      <p>Pochi minuti per aiutarci a migliorare e a preparare insieme la prossima stagione.</p>
+    </div>
+  </section>
+
+  <main class="survey">
+    <div class="survey-container">
+
+      <!-- INTRO -->
+      <div class="survey-intro">
+        <p>Gentile Cliente, grazie per aver affidato la Sua imbarcazione al <strong>Cantiere Garavaglia</strong> in questa stagione.</p>
+        <p>Le prime domande riguardano il servizio ricevuto; le successive ci aiutano a organizzare per tempo il rimessaggio invernale e i lavori. <strong>Può rispondere solo alle domande che desidera</strong>: sono obbligatori soltanto il nome e un recapito.</p>
+        <div class="survey-help">
+          <span class="survey-help-icon" aria-hidden="true">&#9742;</span>
+          <p>Preferisce rispondere a voce? Ci chiami al <a href="tel:+393288168884"><strong>328 8168884</strong></a>: raccoglieremo noi le Sue indicazioni.
+            <span class="no-print">Oppure <button type="button" class="link-btn" id="print-btn">stampi il questionario</button> e lo consegni in cantiere.</span></p>
+        </div>
+      </div>
+
+      <form id="survey-form" novalidate>
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <!-- ============ 1. OPINIONE ============ -->
+        <section class="survey-section" aria-labelledby="s1-title">
+          <div class="survey-section-head">
+            <span class="step">1</span>
+            <div>
+              <h2 id="s1-title">Com&rsquo;&egrave; andata questa stagione</h2>
+              <p class="section-sub">Ci dica con franchezza cosa ha funzionato e cosa no.</p>
+            </div>
+          </div>
+
+          <fieldset class="q">
+            <legend>Come valuta complessivamente il servizio ricevuto dal Cantiere?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="valutazione_generale" value="Eccellente"><span>Eccellente</span></label>
+              <label class="choice"><input type="radio" name="valutazione_generale" value="Buono"><span>Buono</span></label>
+              <label class="choice"><input type="radio" name="valutazione_generale" value="Sufficiente"><span>Sufficiente</span></label>
+              <label class="choice"><input type="radio" name="valutazione_generale" value="Da migliorare"><span>Da migliorare</span></label>
+            </div>
+          </fieldset>
+
+          <div class="q">
+            <p class="q-title">Come valuta i seguenti aspetti?</p>
+            <p class="q-hint">Se un aspetto non La riguarda, lo lasci pure in bianco.</p>
+
+            <div class="rating-list">
+              <fieldset class="rating" data-aspetto="Cortesia e disponibilità del personale">
+                <legend>Cortesia e disponibilit&agrave; del personale</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_cortesia" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_cortesia" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_cortesia" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_cortesia" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="rating" data-aspetto="Competenza e qualità dei lavori">
+                <legend>Competenza e qualit&agrave; dei lavori</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_qualita" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_qualita" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_qualita" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_qualita" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="rating" data-aspetto="Rispetto dei tempi concordati">
+                <legend>Rispetto dei tempi concordati</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_tempi" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_tempi" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_tempi" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_tempi" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="rating" data-aspetto="Chiarezza di preventivi e fatture">
+                <legend>Chiarezza di preventivi e fatture</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_preventivi" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_preventivi" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_preventivi" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_preventivi" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="rating" data-aspetto="Facilità di contatto e rapidità nelle risposte">
+                <legend>Facilit&agrave; di contatto e rapidit&agrave; nelle risposte</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_contatto" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_contatto" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_contatto" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_contatto" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="rating" data-aspetto="Cura e pulizia della barca in cantiere">
+                <legend>Cura e pulizia della barca in cantiere</legend>
+                <div class="choices choices-sm">
+                  <label class="choice"><input type="radio" name="asp_cura" value="Eccellente"><span>Eccellente</span></label>
+                  <label class="choice"><input type="radio" name="asp_cura" value="Buono"><span>Buono</span></label>
+                  <label class="choice"><input type="radio" name="asp_cura" value="Sufficiente"><span>Sufficiente</span></label>
+                  <label class="choice"><input type="radio" name="asp_cura" value="Da migliorare"><span>Da migliorare</span></label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="q">
+            <label class="q-title" for="suggerimenti">C&rsquo;&egrave; qualcosa che vorrebbe vedere migliorato, o un servizio che ritiene utile aggiungere?</label>
+            <textarea id="suggerimenti" name="suggerimenti" rows="4" placeholder="Scriva liberamente, anche poche parole"></textarea>
+          </div>
+        </section>
+
+        <!-- ============ 2. PROSSIMA STAGIONE ============ -->
+        <section class="survey-section" aria-labelledby="s2-title">
+          <div class="survey-section-head">
+            <span class="step">2</span>
+            <div>
+              <h2 id="s2-title">Programmiamo insieme la prossima stagione</h2>
+              <p class="section-sub">Stiamo organizzando il rimessaggio invernale 2026/27. Conoscere per tempo le Sue esigenze ci permette di garantirLe spazio e la soluzione pi&ugrave; adatta.</p>
+            </div>
+          </div>
+
+          <fieldset class="q">
+            <legend>Desidera affidarci la Sua imbarcazione anche per il prossimo inverno?</legend>
+            <div class="choices choices-col">
+              <label class="choice"><input type="radio" name="intenzione" value="Sì, confermo"><span>S&igrave;, confermo</span></label>
+              <label class="choice"><input type="radio" name="intenzione" value="Probabilmente sì, vorrei una proposta"><span>Probabilmente s&igrave;, vorrei ricevere una proposta</span></label>
+              <label class="choice"><input type="radio" name="intenzione" value="Non ho ancora deciso"><span>Non ho ancora deciso</span></label>
+              <label class="choice"><input type="radio" name="intenzione" value="No"><span>No, per la prossima stagione non ne avr&ograve; bisogno</span></label>
+            </div>
+          </fieldset>
+
+          <div class="q" id="blocco-motivo" hidden>
+            <label class="q-title" for="motivo_no">Se vuole, ci dica il motivo: ci aiuta a capire dove migliorare.</label>
+            <textarea id="motivo_no" name="motivo_no" rows="3" placeholder="Facoltativo"></textarea>
+          </div>
+
+          <div id="blocco-rimessaggio">
+            <div class="q">
+              <p class="q-title">La Sua imbarcazione</p>
+              <p class="q-hint">Anche misure indicative vanno benissimo.</p>
+              <div class="field-grid">
+                <div class="field field-wide">
+                  <label for="barca_modello">Cantiere e modello</label>
+                  <input type="text" id="barca_modello" name="barca_modello" placeholder="Es. Sunseeker Portofino 53">
+                </div>
+                <div class="field">
+                  <label for="lunghezza">Lunghezza (metri)</label>
+                  <input type="text" id="lunghezza" name="lunghezza" inputmode="decimal" placeholder="Es. 16,5">
+                </div>
+                <div class="field">
+                  <label for="larghezza">Larghezza massima (metri)</label>
+                  <input type="text" id="larghezza" name="larghezza" inputmode="decimal" placeholder="Es. 4,6">
+                </div>
+              </div>
+            </div>
+
+            <fieldset class="q">
+              <legend>Dove preferirebbe il rimessaggio?</legend>
+              <div class="choices choices-col">
+                <label class="choice"><input type="radio" name="rimessaggio" value="Piazzale esterno"><span>Piazzale esterno</span></label>
+                <label class="choice"><input type="radio" name="rimessaggio" value="Capannone coperto"><span>Capannone coperto</span></label>
+                <label class="choice"><input type="radio" name="rimessaggio" value="Da valutare"><span>Da valutare in base a disponibilit&agrave; e preventivo</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="q">
+              <legend>Quando pensa di portare la barca in cantiere?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Settembre 2026"><span>Settembre</span></label>
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Ottobre 2026"><span>Ottobre</span></label>
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Novembre 2026"><span>Novembre</span></label>
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Dicembre 2026"><span>Dicembre</span></label>
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Già in cantiere"><span>&Egrave; gi&agrave; in cantiere</span></label>
+                <label class="choice"><input type="radio" name="periodo_ingresso" value="Da concordare"><span>Da concordare</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="q">
+              <legend>Quando vorrebbe tornare in acqua?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="periodo_varo" value="Marzo 2027"><span>Marzo</span></label>
+                <label class="choice"><input type="radio" name="periodo_varo" value="Aprile 2027"><span>Aprile</span></label>
+                <label class="choice"><input type="radio" name="periodo_varo" value="Maggio 2027"><span>Maggio</span></label>
+                <label class="choice"><input type="radio" name="periodo_varo" value="Giugno 2027"><span>Giugno</span></label>
+                <label class="choice"><input type="radio" name="periodo_varo" value="Da concordare"><span>Da concordare</span></label>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+
+        <!-- ============ 3. LAVORI ============ -->
+        <section class="survey-section" id="blocco-lavori" aria-labelledby="s3-title">
+          <div class="survey-section-head">
+            <span class="step">3</span>
+            <div>
+              <h2 id="s3-title">Approfittiamo dell&rsquo;inverno per la barca</h2>
+              <p class="section-sub">L&rsquo;inverno &egrave; il momento ideale per programmare con calma gli interventi. Non &egrave; un impegno: ci serve solo per organizzarci, e verificheremo tutto insieme con un sopralluogo.</p>
+            </div>
+          </div>
+
+          <fieldset class="q">
+            <legend>Quali lavori vorrebbe valutare? <span class="legend-hint">(pu&ograve; sceglierne pi&ugrave; di uno)</span></legend>
+            <div class="checks">
+              <label class="choice"><input type="checkbox" name="lavori" value="Tagliando motori e generatori"><span>Tagliando motori e generatori</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Trasmissioni, piedi poppieri, linee d'asse"><span>Trasmissioni, piedi poppieri, linee d&rsquo;asse</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Carena: antivegetativa, eliche, anodi"><span>Carena: antivegetativa, eliche, anodi</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Lucidatura e trattamento gelcoat"><span>Lucidatura e trattamento gelcoat</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Carrozzeria e vetroresina"><span>Carrozzeria e vetroresina</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Verniciatura"><span>Verniciatura</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Teak e legni"><span>Teak e legni</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Impianto elettrico ed elettronica"><span>Impianto elettrico ed elettronica</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Impianto idraulico"><span>Impianto idraulico</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Climatizzazione e frigoriferi"><span>Climatizzazione e frigoriferi</span></label>
+              <label class="choice"><input type="checkbox" name="lavori" value="Selleria e cuscineria"><span>Selleria e cuscineria</span></label>
+            </div>
+            <div class="field field-inline">
+              <label for="lavori_altro">Altro</label>
+              <input type="text" id="lavori_altro" name="lavori_altro" placeholder="Indichi eventuali altri lavori">
+            </div>
+          </fieldset>
+
+          <div class="q">
+            <label class="q-title" for="note">Note o richieste particolari</label>
+            <textarea id="note" name="note" rows="4" placeholder="Es. un problema notato durante l'estate, un lavoro da preventivare..."></textarea>
+          </div>
+
+          <div class="q">
+            <label class="choice choice-single"><input type="checkbox" name="sopralluogo" id="sopralluogo" value="1"><span>Vorrei fissare un sopralluogo per valutare insieme i lavori</span></label>
+          </div>
+        </section>
+
+        <!-- ============ 4. DATI ============ -->
+        <section class="survey-section" aria-labelledby="s4-title">
+          <div class="survey-section-head">
+            <span class="step">4</span>
+            <div>
+              <h2 id="s4-title">I Suoi recapiti</h2>
+              <p class="section-sub">Per sapere a chi appartengono le risposte ed eventualmente ricontattarLa.</p>
+            </div>
+          </div>
+
+          <div class="q">
+            <div class="field-grid">
+              <div class="field field-wide">
+                <label for="nome">Nome e cognome <span class="req">*</span></label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+39 ...">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+              </div>
+            </div>
+            <p class="q-hint">Indichi almeno un recapito, telefono oppure email.</p>
+          </div>
+
+          <fieldset class="q">
+            <legend>Come preferisce essere ricontattato?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="contatto_preferito" value="Telefono"><span>Telefono</span></label>
+              <label class="choice"><input type="radio" name="contatto_preferito" value="Email"><span>Email</span></label>
+              <label class="choice"><input type="radio" name="contatto_preferito" value="WhatsApp"><span>WhatsApp</span></label>
+            </div>
+          </fieldset>
+
+          <div class="q privacy-box">
+            <p>I dati forniti sono trattati dal titolare del Cantiere, BOSMAL Italia S.r.l., solo per valutare la qualit&agrave; del servizio, organizzare il rimessaggio e rispondere alle Sue richieste. Non vengono ceduti a terzi. <a href="privacy.html" target="_blank" rel="noopener">Informativa privacy completa</a>.</p>
+            <label class="choice choice-single"><input type="checkbox" id="privacy" name="privacy" required><span>Ho letto l&rsquo;informativa privacy <span class="req">*</span></span></label>
+          </div>
+        </section>
+
+        <!-- INVIO -->
+        <div class="survey-submit no-print">
+          <div class="form-alert" id="form-alert" role="alert" hidden></div>
+          <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">Invia il questionario</button>
+          <p class="save-note">Le risposte restano salvate su questo dispositivo finch&eacute; non le invia: pu&ograve; interrompere e riprendere in un secondo momento.</p>
+        </div>
+
+        <!-- Solo su carta -->
+        <div class="print-only print-footer">
+          <p>Data: ____ / ____ / 2026 &nbsp;&nbsp;&nbsp; Firma: ______________________________</p>
+          <p>Consegni il questionario compilato in cantiere (Via Divizia 3, Andora) oppure lo fotografi e lo invii a <strong>bosmal.marine@cantieregaravaglia.it</strong> o al 328 8168884 via WhatsApp.</p>
+        </div>
+      </form>
+
+      <!-- GRAZIE -->
+      <div class="survey-thanks" id="survey-thanks" hidden tabindex="-1">
+        <div class="thanks-icon" aria-hidden="true">&#10003;</div>
+        <h2>Grazie!</h2>
+        <p>Abbiamo ricevuto le Sue risposte. Se ci ha chiesto una proposta o un sopralluogo, La ricontatteremo nei prossimi giorni.</p>
+        <p class="thanks-quote">Una barca non &egrave; soltanto un bene da custodire, ma qualcosa a cui si affidano tempo, passione e ricordi. &Egrave; con questo spirito che vogliamo continuare a prendercene cura.</p>
+        <p>Per qualsiasi necessit&agrave;: <a href="tel:+393288168884">328 8168884</a> &middot; <a href="mailto:bosmal.marine@cantieregaravaglia.it">bosmal.marine@cantieregaravaglia.it</a></p>
+        <a href="index.html" class="btn btn-dark">Torna al sito</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">CG</div><div class="logo-text">Cantiere Garavaglia<span>Andora &middot; dal 1978</span></div></a><p>Impegno e professionalit&agrave;, un servizio prima classe.</p></div>
+        <div><h4>Navigazione</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="azienda.html">Chi Siamo</a></li><li><a href="servizi.html">Servizi</a></li><li><a href="vetrina.html">Vetrina</a></li><li><a href="contatti.html">Contatti</a></li></ul></div>
+        <div><h4>Servizi</h4><ul class="footer-links"><li><a href="servizi.html#meccanica">Assistenza Meccanica</a></li><li><a href="servizi.html#carena">Manutenzione Carena</a></li><li><a href="servizi.html#rimessaggio">Rimessaggio</a></li><li><a href="servizi.html#collaudi">Collaudi</a></li><li><a href="servizi.html#consulenza">Consulenza</a></li></ul></div>
+        <div><h4>Contatti</h4><div class="footer-contact-item"><span class="icon">&#9872;</span><div><strong>Cantiere:</strong><br>Via Divizia, 3 - 17051 Andora (SV)</div></div><div class="footer-contact-item"><span class="icon">&#9742;</span><div><a href="tel:+393288168884">328 8168884</a></div></div><div class="footer-contact-item"><span class="icon">&#9993;</span><div><a href="mailto:bosmal.marine@cantieregaravaglia.it">bosmal.marine@cantieregaravaglia.it</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><span>EU VAT No: IT 10917750019 - BOSMAL Italia S.r.l.</span><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie-policy.html">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="js/config.js?v=2"></script>
+  <script src="js/site-data.js?v=2"></script>
+  <script src="js/questionario.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
