@@ -196,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         cancellaBozza();
+        if (window.bosmalStat) window.bosmalStat('questionario_inviato');
         mostraGrazie();
       })
       .catch(function () {

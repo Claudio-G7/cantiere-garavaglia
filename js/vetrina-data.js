@@ -141,7 +141,10 @@
     grid.querySelectorAll('.boat-image[data-idx]').forEach(function (el) {
       var open = function () {
         var b = BOATS[+el.dataset.idx];
-        if (b && b.gallery.length) Lightbox.open(b.gallery, 0, b.nome);
+        if (b && b.gallery.length) {
+          Lightbox.open(b.gallery, 0, b.nome);
+          if (window.bosmalStat) window.bosmalStat('galleria', b.nome);
+        }
       };
       el.addEventListener('click', open);
       el.addEventListener('keydown', function (e) {

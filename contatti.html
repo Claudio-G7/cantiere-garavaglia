@@ -272,6 +272,7 @@
             });
 
             if (response.ok) {
+              if (window.bosmalStat) window.bosmalStat('contatto_inviato', document.getElementById('subject').value);
               document.getElementById('form-success').style.display = 'block';
               document.getElementById('form-error').style.display = 'none';
               form.reset();
@@ -290,6 +291,7 @@
     });
   </script>
   <script src="js/config.js?v=2"></script>
+  <script src="js/statistiche.js?v=1" defer></script>
   <script src="js/site-data.js?v=2"></script>
   <script src="js/main.js" defer></script>
 </body>

@@ -55,7 +55,7 @@
   </section>
 
   <main class="legal-content">
-    <p class="update-date">Ultimo aggiornamento: gennaio 2025</p>
+    <p class="update-date">Ultimo aggiornamento: settembre 2026</p>
 
     <p>Il sito <strong>cantieregaravaglia.it</strong> utilizza cookie e tecnologie simili per garantire il corretto funzionamento del sito e, con il tuo consenso, per migliorare la tua esperienza di navigazione. Questa pagina spiega cosa sono i cookie, quali usiamo e come puoi gestirli.</p>
 
@@ -84,6 +84,24 @@
           <td>Sessione</td>
           <td>Garantiscono il corretto funzionamento della navigazione sul sito</td>
         </tr>
+        <tr>
+          <td><code>bosmal_visita</code> <small>(memoria di sessione del browser)</small></td>
+          <td><span class="cookie-badge tecnico">Tecnico</span></td>
+          <td>Sessione</td>
+          <td>Segnala che la visita &egrave; gi&agrave; stata conteggiata nelle statistiche anonime. Non contiene alcun codice identificativo</td>
+        </tr>
+        <tr>
+          <td><code>bosmal_nostat</code> <small>(memoria locale del browser)</small></td>
+          <td><span class="cookie-badge tecnico">Tecnico</span></td>
+          <td>Fino alla rimozione</td>
+          <td>Presente solo se l&rsquo;utente ha scelto di non essere conteggiato (<code>?nostat=1</code>)</td>
+        </tr>
+        <tr>
+          <td><code>questionario-2026-bozza</code> <small>(memoria locale del browser)</small></td>
+          <td><span class="cookie-badge tecnico">Tecnico</span></td>
+          <td>Fino all&rsquo;invio</td>
+          <td>Conserva sul dispositivo le risposte del questionario non ancora inviate, per poterlo completare in seguito</td>
+        </tr>
       </tbody>
     </table>
 
@@ -109,7 +127,7 @@
       </tbody>
     </table>
 
-    <p>Il sito <strong>non utilizza</strong> cookie di profilazione o di tracciamento pubblicitario.</p>
+    <p>Il sito <strong>non utilizza</strong> cookie analitici, di profilazione o di tracciamento pubblicitario. Le statistiche di visita sono raccolte in forma anonima, senza cookie n&eacute; identificativi, sul server del Titolare (vedi <a href="privacy.html">Privacy Policy</a>).</p>
 
     <h2>3. Come Gestire i Cookie</h2>
 
@@ -157,6 +175,7 @@
   <button class="scroll-top" aria-label="Torna in cima">&#8593;</button>
 
   <script src="js/config.js?v=2"></script>
+  <script src="js/statistiche.js?v=1" defer></script>
   <script src="js/site-data.js?v=2"></script>
   <script src="js/main.js" defer></script>
 </body>
