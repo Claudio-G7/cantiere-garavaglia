@@ -20,3 +20,9 @@ admin/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Materiale stampabile (locandine, ecc.)
+materiale-stampa/
+
+# Repository privato (pannello, backend, documentazione) nella stessa cartella: vedi README.md
+.git-private/
