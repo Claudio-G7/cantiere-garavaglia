@@ -314,6 +314,33 @@ h1, h2, h3, h4 {
   );
 }
 
+/* --- Video di sfondo della home --- */
+.hero-video,
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.hero-video { object-fit: cover; background: var(--navy); }
+
+.hero-video-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 22, 40, 0.82) 0%,
+    rgba(10, 22, 40, 0.45) 50%,
+    rgba(10, 22, 40, 0.2) 100%
+  );
+}
+
+.hero--video .hero-video,
+.hero--video .hero-video-overlay { opacity: 1; }
+.hero--video .hero-indicators { display: none; }
+
 .hero-content {
   position: absolute;
   inset: 0;

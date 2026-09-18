@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=5">
 
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
@@ -129,6 +129,13 @@
       <div class="hero-slide" style="background-image: url('images/hero/DSCF3251_2.jpg'); background-size:cover; background-position:center;"></div>
       <div class="hero-slide" style="background-image: url('images/hero/01andora_foto_Luciano_Rosso.jpg'); background-size:cover; background-position:center;"></div>
     </div>
+
+    <!-- Video di sfondo (scelto da slider.js: orizzontale per computer, verticale per telefono).
+         Se non parte, o con "riduci animazioni" / risparmio dati, resta lo slider di foto qui sopra. -->
+    <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"
+           data-orizzontale="video/hero-orizzontale.mp4" data-orizzontale-poster="video/hero-orizzontale.jpg"
+           data-verticale="video/hero-verticale.mp4" data-verticale-poster="video/hero-verticale.jpg"></video>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
 
     <div class="hero-content">
       <div class="hero-badge">&#9875; Dal 1978 ad Andora</div>
@@ -452,7 +459,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/slider.js" defer></script>
+  <script src="js/slider.js?v=2" defer></script>
   <script src="js/config.js?v=2"></script>
   <script src="js/statistiche.js?v=1" defer></script>
   <script src="js/site-data.js?v=2"></script>
