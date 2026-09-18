@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=2">
-  <link rel="stylesheet" href="css/questionario.css?v=2">
+  <link rel="stylesheet" href="css/questionario.css?v=3">
 </head>
 <body>
 
@@ -43,6 +43,14 @@
   <main class="survey">
     <div class="survey-container">
 
+      <!-- Solo su carta: intestazione con i due marchi -->
+      <div class="print-only print-head">
+        <div class="print-brand"><span class="print-cg">CG</span><div><strong>Cantiere Garavaglia</strong><small>Andora &middot; dal 1978</small></div></div>
+        <img src="images/brands/bosmal-marine.png" alt="Bosmal Marine" width="160" height="61">
+      </div>
+      <h1 class="print-only print-title">Questionario clienti &middot; Stagione 2026</h1>
+      <p class="print-only print-intro">Grazie per aver affidato la Sua imbarcazione al Cantiere Garavaglia. Barri le caselle che corrispondono alla Sua risposta: pu&ograve; rispondere solo alle domande che desidera, sono obbligatori soltanto il nome e un recapito.</p>
+
       <!-- INTRO -->
       <div class="survey-intro">
         <p>Gentile Cliente, grazie per aver affidato la Sua imbarcazione al <strong>Cantiere Garavaglia</strong> in questa stagione.</p>
@@ -53,13 +61,6 @@
             <span class="no-print">Oppure <button type="button" class="link-btn" id="print-btn">stampi il questionario</button> e lo consegni in cantiere.</span></p>
         </div>
       </div>
-
-      <!-- Solo su carta: intestazione con i due marchi -->
-      <div class="print-only print-head">
-        <div class="print-brand"><span class="print-cg">CG</span><div><strong>Cantiere Garavaglia</strong><small>Andora &middot; dal 1978</small></div></div>
-        <img src="images/brands/bosmal-marine.png" alt="Bosmal Marine" width="160" height="61">
-      </div>
-      <h1 class="print-only print-title">Questionario clienti &middot; Stagione 2026</h1>
 
       <form id="survey-form" novalidate>
         <!-- Honeypot anti-spam -->
