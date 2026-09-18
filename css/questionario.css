@@ -297,6 +297,8 @@
 
 .print-only { display: none; }
 
+.banner-partner { display: block; height: 58px; width: auto; margin: 0 auto 18px; }
+
 /* --- Mobile --- */
 @media (max-width: 640px) {
   .survey { padding: 24px 0 56px; }
@@ -317,6 +319,15 @@
   .header, .footer, .page-banner, .whatsapp-float, .scroll-top,
   .cookie-banner, .no-print, .survey-thanks { display: none !important; }
   .print-only { display: block; }
+  .print-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 8px;
+                margin-bottom: 8px; border-bottom: 2px solid #0A1628; }
+  .print-brand { display: flex; align-items: center; gap: 10px; }
+  .print-brand strong { display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 15pt; color: #0A1628; }
+  .print-brand small { font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; color: #A8893D; }
+  .print-cg { width: 30px; height: 30px; border-radius: 50%; background: #C9A84C; color: #0A1628; font-weight: 700;
+              display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', Georgia, serif; }
+  .print-head img { height: 44px; width: auto; }
+  .print-title { font-size: 17pt; color: #0A1628; margin: 4px 0 10px; }
   body, .survey { background: #fff; font-size: 11pt; }
   .survey { padding: 0; }
   .survey-container { max-width: none; padding: 0; }
