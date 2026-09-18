@@ -324,8 +324,7 @@
   .print-brand { display: flex; align-items: center; gap: 8px; }
   .print-brand strong { display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 13pt; color: #0A1628; }
   .print-brand small { font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: #A8893D; }
-  .print-cg { width: 26px; height: 26px; border-radius: 50%; background: #C9A84C; color: #0A1628; font-weight: 700; font-size: 9pt;
-              display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', Georgia, serif; }
+  .print-mark { height: 34px; width: auto; }
   .print-head img { height: 36px; width: auto; }
   .print-title { font-size: 14pt; color: #0A1628; margin: 2px 0 2px; }
   .print-intro { font-size: 8.5pt; color: #333; margin: 0 0 6px; line-height: 1.4; }
