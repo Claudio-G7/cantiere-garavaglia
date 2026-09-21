@@ -539,6 +539,13 @@ h1, h2, h3, h4 {
   background: linear-gradient(135deg, var(--navy-light), var(--sea-blue));
 }
 
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .about-image-placeholder {
   width: 100%;
   height: 100%;
