@@ -22,6 +22,7 @@
   --shadow-lg:   0 12px 48px rgba(10, 22, 40, 0.18);
   --radius:      8px;
   --radius-lg:   16px;
+  --font-sans:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -34,7 +35,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-sans);
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
@@ -145,7 +146,7 @@ h1, h2, h3, h4 {
 
 .logo-text span {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -679,7 +680,7 @@ h1, h2, h3, h4 {
 }
 
 .service-card h3 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 12px;
@@ -789,7 +790,7 @@ h1, h2, h3, h4 {
 }
 
 .boat-info h3 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -934,7 +935,7 @@ h1, h2, h3, h4 {
 }
 
 .footer h4 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--white);
@@ -1202,3 +1203,57 @@ h1, h2, h3, h4 {
 .animate-delay-1 { animation-delay: 0.1s; }
 .animate-delay-2 { animation-delay: 0.2s; }
 .animate-delay-3 { animation-delay: 0.3s; }
+
+
+/* =============================
+   REFRESH: icone, foto, banner, marchi
+   ============================= */
+.ico { width: 1em; height: 1em; display: block; flex-shrink: 0; }
+.service-icon .ico { width: 26px; height: 26px; }
+.service-icon { font-size: 0; }
+.footer-contact-item .icon .ico, .cta-contact-item .icon .ico, .utility-bar .ico { width: 18px; height: 18px; }
+.footer-social a .ico { width: 18px; height: 18px; }
+.cta-contact-item .icon { font-size: 0; }
+.contact-item-icon { font-size: 0 !important; }
+.contact-item-icon .ico { width: 22px; height: 22px; }
+
+.service-detail-img, .flexicovers-img, .facility-img { overflow: hidden; }
+.service-detail-img img, .flexicovers-img img, .facility-img img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.6s ease;
+}
+.service-detail:hover .service-detail-img img { transform: scale(1.03); }
+.service-detail-img { box-shadow: var(--shadow); }
+
+/* Fascia marchi: sobria, leggibile */
+.brands-section { padding: 48px 0; }
+.brands-grid { gap: 20px 56px; }
+.brand-item {
+  font-family: var(--font-sans);
+  font-size: 0.95rem; font-weight: 600; letter-spacing: 3px;
+  color: var(--text-light); opacity: 0.75;
+}
+.brand-item:hover { opacity: 1; color: var(--navy); }
+
+/* Banner cookie: scheda discreta in basso a sinistra, non una barra sul contenuto */
+.cookie-banner {
+  left: 24px; right: auto; bottom: 24px; max-width: 420px;
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg);
+}
+.cookie-inner { flex-direction: column; align-items: stretch; gap: 14px; }
+.cookie-inner p { min-width: 0; font-size: 0.84rem; line-height: 1.55; }
+.cookie-buttons { justify-content: flex-end; }
+@media (max-width: 600px) {
+  .cookie-banner { left: 12px; right: 12px; bottom: 12px; max-width: none; }
+}
+
+/* Dettagli di rifinitura */
+.btn:focus-visible, .nav-menu a:focus-visible, a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold); outline-offset: 3px;
+}
+.section-label::before, .section-label::after { content: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .whatsapp-float { animation: none; }
+}
