@@ -1257,3 +1257,14 @@ h1, h2, h3, h4 {
   html { scroll-behavior: auto; }
   .whatsapp-float { animation: none; }
 }
+
+/* Barche: foto/titolo cliccabili dalla home e scheda evidenziata quando si arriva da un link */
+a.boat-image { text-decoration: none; color: inherit; }
+.boat-info h3 a:hover { color: var(--gold-dark); }
+.boat-card { scroll-margin-top: 96px; }
+.boat-card--target { animation: boat-target 2.4s ease-out 1; }
+@keyframes boat-target {
+  0%, 60% { box-shadow: 0 0 0 3px var(--gold), var(--shadow-lg); }
+  100%    { box-shadow: var(--shadow); }
+}
+@media (prefers-reduced-motion: reduce) { .boat-card--target { animation: none; box-shadow: 0 0 0 3px var(--gold); } }
