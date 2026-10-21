@@ -85,12 +85,35 @@
     grid.innerHTML = boats.map(card).join('');
     wireFilters();
     wireGallery();
+    goToHash();
+    window.addEventListener('hashchange', goToHash);
+  }
+
+  // Ancora stabile derivata dal nome (vale per API e JSON): vetrina.html#sunseeker-portofino-53
+  function slugify(s) {
+    return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  // Se l'URL punta a una barca (es. dalla home), la porta in vista e la evidenzia.
+  function goToHash() {
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    if (!id) return;
+    var card = document.getElementById(id);
+    if (!card || !card.classList.contains('boat-card')) return;
+    card.style.display = '';
+    var all = document.querySelector('.filter-btn[data-filter="all"]');
+    if (all && !all.classList.contains('active')) all.click();
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    grid.querySelectorAll('.boat-card--target').forEach(function (c) { c.classList.remove('boat-card--target'); });
+    void card.offsetWidth;
+    card.classList.add('boat-card--target');
   }
 
   function card(b, i) {
     var count = b.gallery.length;
     return '' +
-      '<div class="boat-card" data-brand="' + esc(b.marca) + '">' +
+      '<div class="boat-card" id="' + esc(slugify(b.nome)) + '" data-brand="' + esc(b.marca) + '">' +
         '<div class="boat-image" data-idx="' + i + '"' + (count ? ' role="button" tabindex="0" aria-label="Apri le foto di ' + esc(b.nome) + '"' : '') + '>' +
           '<img src="' + esc(b.coverUrl) + '" alt="' + esc(b.nome) + '" loading="lazy">' +
           (b.tag ? '<span class="boat-tag">' + esc(b.tag) + '</span>' : '') +
